@@ -4,4 +4,6 @@ class User::TopController < User::ApplicationController
   def index; end
 
   def premium; end
+
+  def about; end
 end
