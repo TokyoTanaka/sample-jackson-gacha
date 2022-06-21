@@ -11,7 +11,7 @@
         %li.nav-item
           %a.nav-link.fw-bold{:href => "/help"}= t(".help")
       %div
-        %button.btn.text-primary
+        %a.btn.text-primary{:href => new_registration_confirmation_path}
           = t(".sign_in")
         %button.btn.btn-outline-primary
           = t(".sign_up")
