@@ -1,0 +1,57 @@
+{
+  "name": "childlens",
+  "dockerComposeFile": ["./docker-compose.yml"],
+  "service": "app" ,
+  "workspaceFolder": "/workspace",
+  "runServices": [
+    "redis"
+  ],
+  "extensions": [
+    "ms-ceintl.vscode-language-pack-ja",
+    "eamodio.gitlens",
+    "wingrunr21.vscode-ruby",
+    "mosapride.zenkaku",
+    "misogi.ruby-rubocop",
+    "emeraldwalk.runonsave",
+    "usernamehw.errorlens",
+    "natqe.reload",
+    "spywhere.guides",
+    "coenraads.bracket-pair-colorizer",
+    "github.copilot"
+  ],
+  "settings": {
+    "[ruby]": {
+      "editor.insertSpaces": true,
+      "editor.tabSize": 2,
+      "editor.formatOnSave": true
+    },
+    "gitlens.codeLens.authors.command": false,
+    "ruby.rubocop.executePath": "/usr/local/bundle/bin/",
+    "ruby.rubocop.onSave": true,
+    "ruby.rubocop.configFilePath": ".rubocop.yml",
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "editor.tabSize": 2,
+    "emeraldwalk.runonsave": {
+      "commands": [
+        {
+          "match": "config/routes.rb",
+          "cmd": "bundle exec annotate --routes --pr bottom"
+        },
+        {
+          "match": "config/routes/.+rb",
+          "cmd": "bundle exec annotate --routes --pr bottom"
+        },
+        {
+          "match": "config/routes/user/.+rb",
+          "cmd": "bundle exec annotate --routes --pr bottom"
+        }
+      ]
+    }
+  },
+  "postCreateCommand": "bundle install --path=/bundle && yarn"
+  // "postCreateCommand": "bundle install --path=/bundle && yarn && bundle exec rake db:create && bundle exec rake db:migrate"
+}

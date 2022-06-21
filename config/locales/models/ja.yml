@@ -1,0 +1,6 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        registration:
+          unconfirmed_email: メールアドレス

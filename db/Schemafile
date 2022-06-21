@@ -1,0 +1,9 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+require 'schemas/users.schema'
+require 'schemas/user_registrations.schema'
+require 'schemas/user_password_reset_requests.schema'
+require 'schemas/user_database_authentications.schema'
+require 'schemas/user_account_trackings.schema'
+require 'schemas/user_account_lockings.schema'

@@ -1,0 +1,7 @@
+ja:
+  service:
+    name: こどもレンズ
+    desc: |
+      こどものレンズからみたセカイはどんな世界だろう？
+  buttons:
+    submit: 送信する
