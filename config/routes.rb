@@ -18,6 +18,9 @@ end
 #                                          POST   /registrations/confirmation(.:format)                                                             user/registrations#create
 #                 finish_user_registration POST   /registration/finish(.:format)                                                                    user/registrations#finish
 #                                     help GET    /help(.:format)                                                                                   user/help#index
+#                                 settings GET    /settings(.:format)                                                                               redirect(301, /settings/account)
+#                         settings_account GET    /settings/account(.:format)                                                                       user/settings#index
+#                         settings_profile GET    /settings/profile(.:format)                                                                       user/settings#profile
 #                                 user_top GET    /                                                                                                 user/top#index
 #                                  premium GET    /premium(.:format)                                                                                user/top#premium
 #                                    about GET    /about(.:format)                                                                                  user/top#about

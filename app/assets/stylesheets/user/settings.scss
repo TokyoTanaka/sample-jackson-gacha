@@ -1,0 +1,102 @@
+ul {
+  padding: 0;
+}
+.settings-outer {
+  padding: 0;
+
+  @media screen and (min-width: 756px) {
+    padding: 16px;
+  }
+}
+.settings-inner {
+  display: block;
+  h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+    word-break: break-all;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .settings-sidebar  {
+    width: 100%;
+    padding: 24px 0 0;
+    margin-right: 0;
+    margin-bottom: 8px;
+    background-color: white;
+    box-shadow: 0 0 1px rgb(34 34 34 / 8%);
+    .settings-sidebar-nav {
+      display: flex;
+      overflow: scroll;
+      white-space: nowrap;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      padding-left: 8px;
+      &::-webkit-scrollbar {
+        display:none;
+      }
+      .settings-sidebar-list {
+        display: flex;
+        width: auto;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        .settings-sidebar-item {
+          font-weight: 700;
+          width: 100%;
+          &.active {
+            border-bottom: 2px solid #212121;
+          }
+          .settings-sidebar-link {
+            cursor: pointer;
+            padding: 12px 8px;
+            font-size: .875rem;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            &:hover {
+              color: inherit;
+              background-color: rgba(34,34,34,.05);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.settings-account {
+  padding: 16px;
+  .account-sidebar {
+    display: none;
+    @media screen and (min-width: 756px) {
+      display: block;
+    }
+    .account-sidebar-list {
+      .account-sidebar-item {
+        .account-sidebar-link {
+          cursor: pointer;
+          padding: 8px;
+          font-size: .875rem;
+          position: relative;
+          z-index: 1;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          &:hover {
+            color: inherit;
+            background-color: rgba(34,34,34,.05);
+          }
+        }
+      }
+    }
+  }
+  .account-wrapper {
+    padding-top: 4px;
+    .edit-btn {
+      font-size: 0.8rem;
+      color: #2CB696;
+    }
+  }
+}
