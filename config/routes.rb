@@ -16,11 +16,11 @@ end
 #                registration_confirmation GET    /registrations/confirmation(.:format)                                                             user/registrations#show
 #                                          POST   /registrations/confirmation(.:format)                                                             user/registrations#create
 #                 finish_user_registration POST   /registration/finish(.:format)                                                                    user/registrations#finish
-#                                  privacy GET    /privacy(.:format)                                                                                user/privacy#index
-#                                    terms GET    /terms(.:format)                                                                                  user/terms#index
 #                                 user_top GET    /                                                                                                 user/top#index
 #                                  premium GET    /premium(.:format)                                                                                user/top#premium
 #                                    about GET    /about(.:format)                                                                                  user/top#about
+#                                    terms GET    /terms(.:format)                                                                                  user/top#terms
+#                                  privacy GET    /privacy(.:format)                                                                                user/top#privacy
 #         turbo_recede_historical_location GET    /recede_historical_location(.:format)                                                             turbo/native/navigation#recede
 #         turbo_resume_historical_location GET    /resume_historical_location(.:format)                                                             turbo/native/navigation#resume
 #        turbo_refresh_historical_location GET    /refresh_historical_location(.:format)                                                            turbo/native/navigation#refresh
