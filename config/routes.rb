@@ -9,6 +9,7 @@ end
 # == Route Map
 #
 #                                   Prefix Verb   URI Pattern                                                                                       Controller#Action
+#                                     blog GET    /blog(.:format)                                                                                   user/blog#index
 #      new_database_authentication_session GET    /database_authentications/sign_in(.:format)                                                       user/database_authentication/sessions#new
 #          database_authentication_session POST   /database_authentications/sign_in(.:format)                                                       user/database_authentication/sessions#create
 #  destroy_database_authentication_session DELETE /database_authentications/sign_out(.:format)                                                      user/database_authentication/sessions#destroy
