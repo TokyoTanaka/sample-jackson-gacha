@@ -16,6 +16,7 @@ end
 #                registration_confirmation GET    /registrations/confirmation(.:format)                                                             user/registrations#show
 #                                          POST   /registrations/confirmation(.:format)                                                             user/registrations#create
 #                 finish_user_registration POST   /registration/finish(.:format)                                                                    user/registrations#finish
+#                                  privacy GET    /privacy(.:format)                                                                                user/privacy#index
 #                                    terms GET    /terms(.:format)                                                                                  user/terms#index
 #                                 user_top GET    /                                                                                                 user/top#index
 #         turbo_recede_historical_location GET    /recede_historical_location(.:format)                                                             turbo/native/navigation#recede
