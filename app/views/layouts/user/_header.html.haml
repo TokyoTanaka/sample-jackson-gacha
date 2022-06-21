@@ -1,0 +1,19 @@
+%nav#navbar_top.navbar.navbar-expand-lg.navbar-light.bg-light
+  .container-fluid
+    %a.navbar-brand.border.border-3.rounded.p-2.fw-bold{:href => "/"}
+      = t(".service_name")
+    %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarSupportedContent", "data-bs-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      %ul.navbar-nav.me-auto.mb-2.mb-lg-0
+        %li.nav-item
+          %a.nav-link.fw-bold{:href => "#"}= t(".product")
+        %li.nav-item
+          %a.nav-link.fw-bold{:href => "#"}= t(".premium")
+        %li.nav-item
+          %a.nav-link.fw-bold{:href => "#"}= t(".help")
+      %div
+        %button.btn.text-primary
+          = t(".sign_in")
+        %button.btn.btn-outline-primary
+          = t(".sign_up")

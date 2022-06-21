@@ -1,0 +1,52 @@
+%main
+  .px-4.py-5.my-5.text-center
+    %h1.display-5.fw-bold= t("service.name")
+    .col-lg-6.mx-auto
+      %p.lead.mb-4
+        = t("service.desc")
+  .container
+    .row
+      .col-12.col-md-3.mb-2
+        .card.border-0
+          %img.card-img-top{:alt => "画像1", :src => "http://placehold.jp/700x700.png"}/
+          .card-body
+            %h5.card-title.function-title= t(".function.no1.title")
+            %p.card-text= t(".function.no1.desc")
+      .col-12.col-md-3.mb-2
+        .card.border-0
+          %img.card-img-top{:alt => "画像1", :src => "http://placehold.jp/700x700.png"}/
+          .card-body
+            %h5.card-title.function-title= t(".function.no2.title")
+            %p.card-text= t(".function.no2.desc")
+      .col-12.col-md-3.mb-2
+        .card.border-0
+          %img.card-img-top{:alt => "画像1", :src => "http://placehold.jp/700x700.png"}/
+          .card-body
+            %h5.card-title.function-title= t(".function.no3.title")
+            %p.card-text= t(".function.no3.desc")
+      .col-12.col-md-3.mb-2
+        .card.border-0
+          %img.card-img-top{:alt => "画像1", :src => "http://placehold.jp/700x700.png"}/
+          .card-body
+            %h5.card-title.function-title= t(".function.no4.title")
+            %p.card-text= t(".function.no4.desc")
+  .mt-3
+    .wrapper
+      %img.img-fluid.w-100{:src => "https://static.mitene.us/public/assets/landing_page/main/top/cjk_thought-faab492f7d624041a43c9a317a6ff8b3858c85e6710660ccd286bc10c2a6c52c.jpg", :style => "max-height: 300px; object-fit: cover; object-position: 50% 32%"}/
+      .wrapper-overlay
+        .d-flex.align-items-center.justify-content-center.h-100
+          %h2.text-white.font-weight-bold こどもレンズの想い
+  .container-fluid.pt-5
+    .row.justify-content-center
+      .col-lg-8.col-xl-6.align-self-center.pb-5
+        .mx-4.mx-sm-3
+          %h3.font-weight-bold.mb-3.mb-md-4.mb-lg-5
+            子どもの成長をいつでも、どこでも、いつまでも
+          %p.lead.mb-4.mb-lg-5
+            今日撮った子供の写真を、家族にかんたんに共有したい。みんなでその写真について話したい。子供の珠玉のアルバムを残しておきたい。そんな想いから「みてね」は誕生しました。 誰もがスマホで写真を撮り、誰もがスマホで持ち歩くことができるようになった時代。その時代だからこその家族アルバムを私たちは提供していきたいと考えています。
+        .text-center
+          %a.classical-link.font-weight-bold{:href => "/ja/letter_from_founder"}
+            みてねの始まりと、これから
+      .col-lg-4.col-xl-3
+        .d-none.d-lg-block.text-center
+          %img.img-fluid{:src => "https://static.mitene.us/public/assets/landing_page/main/top/ja_thought_device-9cca9e6443e88e48cfce79cc6da5f6aeb343c633915d5c3ce43f7aa3f0fb4907.png"}/

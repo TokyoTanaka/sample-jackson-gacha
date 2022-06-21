@@ -17,7 +17,9 @@
     "natqe.reload",
     "spywhere.guides",
     "coenraads.bracket-pair-colorizer",
-    "github.copilot"
+    "github.copilot",
+    "oderwat.indent-rainbow",
+    "karunamurti.haml"
   ],
   "settings": {
     "[ruby]": {
