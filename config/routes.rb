@@ -17,6 +17,7 @@ end
 #                registration_confirmation GET    /registrations/confirmation(.:format)                                                             user/registrations#show
 #                                          POST   /registrations/confirmation(.:format)                                                             user/registrations#create
 #                 finish_user_registration POST   /registration/finish(.:format)                                                                    user/registrations#finish
+#                                     help GET    /help(.:format)                                                                                   user/help#index
 #                                 user_top GET    /                                                                                                 user/top#index
 #                                  premium GET    /premium(.:format)                                                                                user/top#premium
 #                                    about GET    /about(.:format)                                                                                  user/top#about
