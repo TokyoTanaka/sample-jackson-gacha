@@ -1,0 +1,9 @@
+%main.bg-light.settings-outer
+  .max-width-980
+    .settings-inner
+      = render partial: 'navbar', locals: { active: 'account' }
+      .settings-main.bg-white
+        .settings-account
+          .row
+            = render partial: 'account_sidebar', locals: { active: 'withdrawal' }
+            withdrawal

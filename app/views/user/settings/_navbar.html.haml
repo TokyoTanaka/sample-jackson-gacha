@@ -1,0 +1,20 @@
+.settings-nav
+  .settings-sidebar
+    %h1 アカウント設定
+    %nav.settings-sidebar-nav
+      %ul.settings-sidebar-list
+        %li.settings-sidebar-item{class:('active' if active == 'account')}
+          %a.settings-sidebar-link{:href => '/settings/account'}
+            アカウント
+        %li.settings-sidebar-item{class:('active' if active == 'reactions')}
+          %a.settings-sidebar-link{:href => '/settings/reactions'}
+            リアクション
+        %li.settings-sidebar-item{class:('active' if active == 'notifications')}
+          %a.settings-sidebar-link{:href => '/settings/notifications'}
+            通知
+        %li.settings-sidebar-item{class:('active' if active == 'credit_card')}
+          %a.settings-sidebar-link{:href => '/settings/credit_card'}
+            カード情報
+        %li.settings-sidebar-item{class:('active' if active == 'premium')}
+          %a.settings-sidebar-link{:href => '/settings/premium'}
+            プレミアム

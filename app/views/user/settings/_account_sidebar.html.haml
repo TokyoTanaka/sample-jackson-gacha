@@ -1,0 +1,15 @@
+.col-md-3
+  .account-sidebar
+    %ul.account-sidebar-list
+      %li.account-sidebar-item{class:('active' if active == 'account')}
+        %a.account-sidebar-link{:href => '/settings/account'}
+          基本情報
+      %li.account-sidebar-item{class:('active' if active == 'profile')}
+        %a.account-sidebar-link{:href => '/settings/profile'}
+          ユーザー設定
+      %li.account-sidebar-item{class:('active' if active == 'social_profile')}
+        %a.account-sidebar-link{:href => '/settings/social_profile'}
+          ソーシャル連携
+      %li.account-sidebar-item{class:('active' if active == 'withdrawal')}
+        %a.form-text.account-sidebar-link{:href => '/settings/withdrawal'}
+          退会手続き

@@ -9,6 +9,10 @@ end
 # == Route Map
 #
 #                                   Prefix Verb   URI Pattern                                                                                       Controller#Action
+#                settings_account_nickname GET    /settings/account/nickname(.:format)                                                              user/account#nickname
+#                settings_account_username GET    /settings/account/username(.:format)                                                              user/account#username
+#                   settings_account_email GET    /settings/account/email(.:format)                                                                 user/account#email
+#                settings_account_password GET    /settings/account/password(.:format)                                                              user/account#password
 #                                     blog GET    /blog(.:format)                                                                                   user/blog#index
 #      new_database_authentication_session GET    /database_authentications/sign_in(.:format)                                                       user/database_authentication/sessions#new
 #          database_authentication_session POST   /database_authentications/sign_in(.:format)                                                       user/database_authentication/sessions#create
@@ -21,6 +25,12 @@ end
 #                                 settings GET    /settings(.:format)                                                                               redirect(301, /settings/account)
 #                         settings_account GET    /settings/account(.:format)                                                                       user/settings#index
 #                         settings_profile GET    /settings/profile(.:format)                                                                       user/settings#profile
+#                  settings_social_profile GET    /settings/social_profile(.:format)                                                                user/settings#social_profile
+#                   settings_notifications GET    /settings/notifications(.:format)                                                                 user/settings#notifications
+#                       settings_reactions GET    /settings/reactions(.:format)                                                                     user/settings#reactions
+#                     settings_credit_card GET    /settings/credit_card(.:format)                                                                   user/settings#credit_card
+#                         settings_premium GET    /settings/premium(.:format)                                                                       user/settings#premium
+#                      settings_withdrawal GET    /settings/withdrawal(.:format)                                                                    user/settings#withdrawal
 #                                 user_top GET    /                                                                                                 user/top#index
 #                                  premium GET    /premium(.:format)                                                                                user/top#premium
 #                                    about GET    /about(.:format)                                                                                  user/top#about
