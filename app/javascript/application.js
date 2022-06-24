@@ -5,7 +5,7 @@ import * as bootstrap from "bootstrap"
 
 document.addEventListener("DOMContentLoaded", function(){
   window.addEventListener('scroll', function() {
-      if (window.scrollY > 55) {
+      if (window.scrollY > 10) {
         document.getElementById('navbar_top').classList.add('fixed-top');
         // add padding top to show content behind navbar
         navbar_height = document.querySelector('.navbar').offsetHeight;
