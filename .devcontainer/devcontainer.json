@@ -1,10 +1,11 @@
 {
-  "name": "childlens",
+  "name": "rails_template",
   "dockerComposeFile": ["./docker-compose.yml"],
   "service": "app" ,
   "workspaceFolder": "/workspace",
   "runServices": [
-    "redis"
+    "redis",
+    "mysql"
   ],
   "extensions": [
     "ms-ceintl.vscode-language-pack-ja",
@@ -17,7 +18,6 @@
     "natqe.reload",
     "spywhere.guides",
     "coenraads.bracket-pair-colorizer",
-    "github.copilot",
     "oderwat.indent-rainbow",
     "karunamurti.haml"
   ],
@@ -54,6 +54,7 @@
       ]
     }
   },
-  "postCreateCommand": "bundle install --path=/bundle && yarn"
+  "postCreateCommand": "bundle install --path=/bundle && yarn",
+  "forwardPorts": [3000, 3306, 6379]
   // "postCreateCommand": "bundle install --path=/bundle && yarn && bundle exec rake db:create && bundle exec rake db:migrate"
 }

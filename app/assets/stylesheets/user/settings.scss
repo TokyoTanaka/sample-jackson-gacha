@@ -153,3 +153,72 @@ ul, li, p {
     }
   }
 }
+
+.reaction-list, .notification-list {
+  .reaction-list-item, .notification-list-item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f2f2f2;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .reaction-img-wrapper, .notification-img-wrapper {
+    flex: none;
+    width: 128px;
+    margin: 0 auto 16px;
+    @media screen and (min-width: 756px) {
+      width: 120px;
+      margin: 0;
+    }
+    img {
+      width: 100%;
+    }
+
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .description {
+    margin-bottom: 16px;
+    font-size: 0.875rem;
+    color: $gray-600;
+  }
+  .setting-btn {
+    margin-left: 16px;
+    font-size: 0.875rem;
+    color: $primary;
+  }
+}
+.reaction-wrapper {
+  .like-nav {
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 16px;
+    border: 1px solid $gray-100;
+    border-radius: 4px;
+  }
+  .like-nav-item {
+    height: 32px;
+    padding: 0 16px;
+    font-size: .875rem;
+    line-height: 30px;
+    color: $black;
+    border-right: 1px solid $gray-100;
+  }
+  .like-nav-item.is-active {
+    color: $black;
+    background-color: $gray-100;
+  }
+  .like-image {
+    cursor: pointer;
+  }
+}

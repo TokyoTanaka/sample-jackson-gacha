@@ -1,0 +1,22 @@
+%main.bg-light.settings-outer
+  .max-width-980
+    .settings-inner
+      = render partial: '/user/settings/navbar', locals: { active: 'notifications' }
+      .settings-main.bg-white
+        .settings-account
+          .row
+            = render partial: '/user/notifications/sidebar', locals: { active: 'notifications' }
+            .col-md-9
+              .account-wrapper.account-basic
+                .notification-list
+                  .row.notification-list-item
+                    .col-12.col-md-3.notification-img-wrapper
+                      %img{:src => 'http://placehold.jp/200x200.png'}
+                    .col-12.col-md-9
+                      .title
+                        %p
+                          メール設定
+                        %a.setting-btn{:href => '/settings/notifications/mail'}
+                          設定する
+                      %p.description
+                        メールで最新情報を受け取れます。いつでもオフにできます。

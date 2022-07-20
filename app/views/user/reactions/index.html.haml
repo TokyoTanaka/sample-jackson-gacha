@@ -1,0 +1,22 @@
+%main.bg-light.settings-outer
+  .max-width-980
+    .settings-inner
+      = render partial: '/user/settings/navbar', locals: { active: 'reactions' }
+      .settings-main.bg-white
+        .settings-account
+          .row
+            = render partial: '/user/reactions/sidebar', locals: { active: 'like' }
+            .col-md-9
+              .account-wrapper.account-basic
+                .reaction-list
+                  .row.reaction-list-item
+                    .col-12.col-md-3.reaction-img-wrapper
+                      %img{:src => 'http://placehold.jp/200x200.png'}
+                    .col-12.col-md-9
+                      .title
+                        %p
+                          スキのお礼メッセージ
+                        %a.setting-btn{:href => '/settings/reactions/like'}
+                          設定する
+                      %p.description
+                        スキしてくれた人にランダムでお礼メッセージを表示します。記事・コメント・サークル投稿、それぞれのスキに設定ができます。自分なりのメッセージを表示してみましょう！

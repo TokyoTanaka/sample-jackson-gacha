@@ -22,12 +22,15 @@ end
 #                                          POST   /registrations/confirmation(.:format)                                                             user/registrations#create
 #                 finish_user_registration POST   /registration/finish(.:format)                                                                    user/registrations#finish
 #                                     help GET    /help(.:format)                                                                                   user/help#index
+#                   settings_notifications GET    /settings/notifications(.:format)                                                                 user/notifications#index
+#              settings_notifications_mail GET    /settings/notifications/mail(.:format)                                                            user/notifications#mail
+#                  settings_reactions_like GET    /settings/reactions/like(.:format)                                                                redirect(301, /settings/reactions/like/photo)
+#                       settings_reactions GET    /settings/reactions(.:format)                                                                     user/reactions#index
+#            settings_reactions_like_photo GET    /settings/reactions/like/photo(.:format)                                                          user/reactions#photo
 #                                 settings GET    /settings(.:format)                                                                               redirect(301, /settings/account)
 #                         settings_account GET    /settings/account(.:format)                                                                       user/settings#index
 #                         settings_profile GET    /settings/profile(.:format)                                                                       user/settings#profile
 #                  settings_social_profile GET    /settings/social_profile(.:format)                                                                user/settings#social_profile
-#                   settings_notifications GET    /settings/notifications(.:format)                                                                 user/settings#notifications
-#                       settings_reactions GET    /settings/reactions(.:format)                                                                     user/settings#reactions
 #                     settings_credit_card GET    /settings/credit_card(.:format)                                                                   user/settings#credit_card
 #                         settings_premium GET    /settings/premium(.:format)                                                                       user/settings#premium
 #                      settings_withdrawal GET    /settings/withdrawal(.:format)                                                                    user/settings#withdrawal

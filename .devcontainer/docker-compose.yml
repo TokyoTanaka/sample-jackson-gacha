@@ -1,6 +1,32 @@
-version: '3'
+version: '3.9'
 services:
+  mysql:
+    container_name: practice_db
+    build: ./mysql
+    command:
+      - mysqld
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --default-authentication-plugin=mysql_native_password
+      - --default-time-zone=Asia/Tokyo
+    restart: always
+    tty: true
+    stdin_open: true
+    ports:
+      - '33070:3306'
+    environment:
+      MYSQL_ROOT_USER: root
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: dev_docker
+      LANG: ja_JP.UTF-8
+      LANGUAGE: ja_JP:ja
+      LC_ALL: ja_JP.UTF-8
+    volumes:
+      - dbdata:/var/lib/mysql
+      - ./mysql/conf.d:/etc/mysql/conf.d
+      - ./log/mysql:/var/log/mysql
   app:
+    container_name: app
     build: ./rails
     tty: true
     stdin_open: true
@@ -17,7 +43,7 @@ services:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
     depends_on:
-      # - db
+      - mysql
       - redis
 
   redis:
@@ -35,6 +61,8 @@ services:
   #   tty: true
 volumes:
   bundle_path:
+  dbdata:
+    driver: local
 
 # secrets:
 #   host_ssh_key:

@@ -1,0 +1,45 @@
+%main.bg-light.settings-outer
+  .max-width-980
+    .settings-inner
+      = render partial: '/user/settings/navbar', locals: { active: 'notifications' }
+      .settings-main.bg-white
+        .settings-account
+          .row
+            = render partial: '/user/notifications/sidebar', locals: { active: 'notifications' }
+            .col-md-9
+              .account-wrapper.account-basic.mb-3
+                %h5.fw-bold.mb-2
+                  アクティビティ
+                .row.mb-2
+                  .col-12.col-md-12
+                    .row
+                      .col-9
+                        .name
+                          フォロー
+                      .col-3
+                        %label.a-switch.is-checked
+                          %input.a-switch__input.visually-hidden{"aria-labelledby" => "", "true-value" => "true", :type => "checkbox"}/
+                          .a-switch__core
+                .row.mb-2
+                  .col-12.col-md-12
+                    .row
+                      .col-9
+                        .name
+                          スキ
+                      .col-3
+                        %label.a-switch
+                          %input.a-switch__input.visually-hidden{"aria-labelledby" => "", "true-value" => "true", :type => "checkbox"}/
+                          .a-switch__core
+              .account-wrapper.account-basic
+                %h5.fw-bold.mb-2
+                  こどもレンズからのお知らせ
+                .row.mb-2
+                  .col-12.col-md-12
+                    .row
+                      .col-9
+                        .name
+                          こどもレンズからのお知らせ
+                      .col-3
+                        %label.a-switch.is-checked
+                          %input.a-switch__input.visually-hidden{"aria-labelledby" => "", "true-value" => "true", :type => "checkbox"}/
+                          .a-switch__core
