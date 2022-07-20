@@ -1,13 +1,17 @@
-# rails_template
+# rails7_template
 
-VS Code + DockerでRailsを動かす際に使う
+Railsアプリケーションを学ぶためのリポジトリ
 
-# V1
+# はじめ方
 
-- Gemfileを整備した
+- マイグレーション
 
-# v2
+```bash
+bundle exec rails db:mirgate
+```
 
-- rails newを実行して、ディレクトリを作成
-- config/database.ymlに、データベース情報を追加した
-- bundle exec rails s を実行して、ブラウザで動いているかどうか確認した
+- pumaの起動
+
+```bash
+./bin/dev
+```
